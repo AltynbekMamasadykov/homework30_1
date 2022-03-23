@@ -1,15 +1,12 @@
 package com.company.service.impl;
-
 import com.company.dao.UserDao;
 import com.company.exceptions.NoSuchIdException;
 import com.company.model.User;
 import com.company.service.UserService;
-
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
     UserDao userDao = new UserDao();
-
 
     @Override
     public void addUser(User user) {
@@ -36,8 +33,6 @@ public class UserServiceImpl implements UserService {
         }catch (NoSuchIdException e){
             System.out.println(e.getMessage());
         }
-
-
     }
 
     @Override

@@ -1,5 +1,4 @@
 package com.company;
-
 import com.company.enums.Gender;
 import com.company.model.User;
 import com.company.service.impl.UserServiceImpl;
@@ -9,8 +8,8 @@ public class Main {
     public static void main(String[] args) {
 
         User user1 = new User(1,"aza",13, Gender.MALE);
-        User user2 = new User(2,"asa",13, Gender.MALE);
-        User user3 = new User(3,"aba",13, Gender.MALE);
+        User user2 = new User(2,"ali",15, Gender.MALE);
+        User user3 = new User(3,"adi",20, Gender.FEMALE);
 
         UserServiceImpl userService = new UserServiceImpl();
         userService.addUser(user1);
